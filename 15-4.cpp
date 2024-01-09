@@ -19,17 +19,17 @@ void FindNumbers(int a, int N)
 int main()
 {
     system("chcp 1251>nul");
-    int a, N;
+    int a, Limit;
     cout << "Введите цифру:\n0. Четные;\n1. Нечетные.\nСтрока для ввода: "; cin >> a;
     if (a != 0 && a != 1)
     {
         cout << "Ошибка! Такого числа нет в списке!\n";
         return 0;
     }
-    cout << "Введите границу поиска чисел: "; cin >> N;
+    cout << "Введите границу поиска чисел: "; cin >> Limit;
     if (a == 0)
         cout << "Четные числа: ";
     else
         cout << "Нечетные числа: ";
-    FindNumbers(a, N);
+    FindNumbers(a, Limit);
 }
